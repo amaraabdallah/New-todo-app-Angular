@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
 let TODOS = [
-  { title: 'Install Angular CLI', isDone: true },
-  { title: 'Style app', isDone: true },
-  { title: 'Finish service functionality', isDone: false },
-  { title: 'Setup API', isDone: false },
+  { title: 'arranger le code', isDone: true },
+  { title: 'verifier le fonctionnement', isDone: true },
+  { title: 'virer bootstrap', isDone: false },
+  { title: 'envoyer sur github', isDone: false },
 ];
 
 @Injectable({

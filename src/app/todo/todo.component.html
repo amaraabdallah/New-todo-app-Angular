@@ -1,9 +1,9 @@
 <section class="todoapp">
 
   <header class="header">
-    <h1>Todo</h1>
+    <h1>A FAIRE</h1>
     <input class="new-todo"
-       placeholder="What needs to be done?"
+       placeholder="que dois tu faire?"
        [(ngModel)]="newTodo"
        (keyup.enter)="addTodo()"
        autofocus>
@@ -34,20 +34,20 @@
   <!-- This footer should hidden by default and shown when there are todos -->
   <footer class="footer">
     <!-- This should be `0 items left` by default -->
-    <span class="todo-count"><strong>{{activeTasks}}</strong> item left</span>
+    <span class="todo-count"><strong>{{activeTasks}}</strong> ENCORE A FAIRE</span>
     <!-- Remove this if you don't implement routing -->
     <ul class="filters">
       <li>
-        <a [routerLink]="['/all']" [class.selected]="path === 'all'">All</a>
+        <a [routerLink]="['/all']" [class.selected]="path === 'all'">TOUTES</a>
       </li>
       <li>
-        <a [routerLink]="['/active']" [class.selected]="path === 'active'">Active</a>
+        <a [routerLink]="['/active']" [class.selected]="path === 'active'">EN COURS</a>
       </li>
       <li>
-        <a [routerLink]="['/completed']" [class.selected]="path === 'completed'">Completed</a>
+        <a [routerLink]="['/completed']" [class.selected]="path === 'completed'">FAITES</a>
       </li>
     </ul>
     <!-- Hidden if no completed items are left ↓ -->
-    <button class="clear-completed" (click)="clearCompleted()">Clear completed</button>
+    <button class="clear-completed" (click)="clearCompleted()">PURGE</button>
   </footer>
 </section>
